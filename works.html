@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>施工実績 | 愛知ダクトサービス</title>
+  <meta name="description" content="愛知ダクトサービスのホームページ">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <div class="demo-bar">デモ版：LINE・フォーム送信先は仮設定です。階層リンクと詳細ページの動作確認ができます。</div>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">ADS</span>
+        <span>愛知ダクトサービス<small>AICHI DUCT SERVICE</small></span>
+      </a>
+      <nav class="nav"><a class="" href="index.html">ホーム</a>
+<a class="" href="duct.html">ダクト清掃</a>
+<a class="" href="aircon.html">エアコン清掃</a>
+<a class="" href="corporate.html">法人向け</a>
+<a class="active" href="works.html">施工実績</a>
+<a class="" href="before-after.html">Before / After</a>
+<a class="" href="symptoms.html">症状から探す</a>
+<a class="" href="company.html">会社概要</a></nav>
+      <div class="header-actions">
+        <a class="btn btn-outline" href="estimate.html">お見積り</a>
+        <a class="btn btn-primary" href="contact.html">無料相談</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">ホーム</a> / 施工実績</div>
+        <h1>施工実績</h1>
+        <p>家庭用から法人施設まで、幅広い清掃実績をカテゴリ別に掲載しています。</p>
+      </div>
+    </section>
+    <section class="light">
+      <div class="container detail-layout">
+        <div>
+          <div id="sec1" class="content-block">
+            <h2>家庭・マンション</h2>
+            <ul class="checks"><li>マンションダクト清掃</li>
+<li>中間ダクトファン分解洗浄</li>
+<li>浴室暖房乾燥機分解洗浄</li>
+<li>乾燥機ダクト清掃</li></ul>
+          </div>
+        
+          <div id="sec2" class="content-block">
+            <h2>医療・宿泊施設</h2>
+            <ul class="checks"><li>産婦人科浴室ダクト清掃</li>
+<li>ビジネスホテル一斉ダクト清掃</li>
+<li>施設換気設備清掃</li></ul>
+          </div>
+        
+          <div id="sec3" class="content-block">
+            <h2>工場・店舗</h2>
+            <ul class="checks"><li>工場設備排気ファン清掃</li>
+<li>工場ルーフファン清掃</li>
+<li>厨房排気ファン清掃</li>
+<li>ダクト仕様変更工事</li></ul>
+          </div>
+        </div>
+        <aside class="side-box">
+          <h3>このページの内容</h3>
+          <a href="#sec1">家庭・マンション</a><a href="#sec2">医療・宿泊施設</a><a href="#sec3">工場・店舗</a>
+          <a href="estimate.html">お見積りへ</a>
+          <a href="contact.html">無料相談へ</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">Contact</div>
+        <h2>まずは写真を送ってご相談ください</h2>
+        <p>問い合わせ導線はLINEとフォームに絞っています。</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-box">
+          <h3 style="font-size:28px;margin-bottom:12px">おすすめはLINE相談です</h3>
+          <p>ダクト内部、浴室乾燥機、エアコン、乾燥機ダクト、排気ファンなど、気になる箇所の写真を送ると確認がスムーズです。</p>
+          <ul class="checks" style="margin:20px 0">
+            <li>気になる箇所をスマホで撮影</li>
+            <li>LINEで写真を送信</li>
+            <li>状況確認後、担当者よりご案内</li>
+          </ul>
+          <a class="btn btn-line js-line-link" href="#">LINEで写真を送って相談する</a>
+        </div>
+        
+      <div class="form">
+        <h3>お問い合わせフォーム</h3>
+        <p style="color:var(--muted);margin-bottom:18px">フォームの内容はデモ送信として確認できます。本番ではGoogle Apps Scriptに接続します。</p>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="field"><label>お名前</label><input name="name" required></div>
+            <div class="field"><label>電話番号</label><input name="tel" required></div>
+            <div class="field"><label>メールアドレス</label><input type="email" name="email"></div>
+            <div class="field"><label>住所・対応エリア</label><input name="area" placeholder="例：名古屋市北区"></div>
+            <div class="field"><label>建物種別</label><select name="building"><option>戸建て</option><option>マンション</option><option>店舗</option><option>事務所</option><option>工場</option><option>クリニック・施設</option><option>その他</option></select></div>
+            <div class="field"><label>希望サービス</label><select name="service"><option>ダクト清掃</option><option>浴室暖房乾燥機清掃</option><option>エアコン清掃</option><option>乾燥機ダクト清掃</option><option>工場・店舗設備清掃</option><option>太陽光パネル清掃</option><option>その他</option></select></div>
+            <div class="field full"><label>希望日時</label><input name="preferredDate" placeholder="例：土日希望、平日夕方など"></div>
+            <div class="field full"><label>お問い合わせ内容</label><textarea name="message" required placeholder="気になる症状、清掃したい場所、写真の有無などをご記入ください。"></textarea></div>
+          </div>
+          <button class="btn btn-dark" type="submit">フォーム内容を送信する</button>
+          <div id="formStatus" class="status"></div>
+        </form>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>愛知ダクトサービス</h3>
+        <p>ダクト清掃・換気システム清掃・浴室暖房乾燥機分解洗浄・エアコン清掃・工場設備メンテナンスまで対応。</p>
+      </div>
+      <div>
+        <p>営業時間：24時間年中無休</p>
+        <p>対応：家庭・店舗・工場・クリニック・ホテル等</p>
+        <p>資格：第2種電気工事士 / トヨタ作業責任者</p>
+      </div>
+    </div>
+  </footer>
+  <div class="fixed-cta">
+    <a class="btn btn-dark" href="estimate.html">お見積り</a>
+    <a class="btn btn-primary" href="contact.html">無料相談</a>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
+</html>
