@@ -91,17 +91,32 @@
           <h2>目で見てわかる清掃前後</h2>
           <p>詳細ページでは、カテゴリ別の比較カードを用意しています。</p>
         </div>
-        <div class="ba-large">
-          <div class="ba-view"><div class="before">BEFORE</div><div class="after">AFTER</div></div>
-        </div>
-        <div class="ba-tabs">
-          <a class="ba-tab active" href="before-after.html#duct">ダクト清掃 前後</a>
-          <a class="ba-tab" href="before-after.html#fan">中間ダクトファン</a>
-          <a class="ba-tab" href="before-after.html#bath">浴室暖房乾燥機</a>
-          <a class="ba-tab" href="before-after.html#factory">工場排気ファン</a>
-          <a class="ba-tab" href="before-after.html#aircon">4方向カセットエアコン</a>
-          <a class="ba-tab" href="before-after.html#dryer">乾燥機ダクト</a>
-        </div>
+       <div class="ba-large">
+  <div class="ba-view">
+    <div class="before" id="baBefore">
+      <div class="ba-image-placeholder">
+        <div class="ba-label">BEFORE</div>
+        <div class="ba-caption" id="baBeforeCaption">ダクト清掃 前後</div>
+      </div>
+    </div>
+
+    <div class="after" id="baAfter">
+      <div class="ba-image-placeholder ba-image-placeholder-after">
+        <div class="ba-label">AFTER</div>
+        <div class="ba-caption" id="baAfterCaption">ダクト清掃 前後</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ba-tabs">
+  <button class="ba-tab active" type="button" data-key="duct">ダクト清掃 前後</button>
+  <button class="ba-tab" type="button" data-key="fan">中間ダクトファン</button>
+  <button class="ba-tab" type="button" data-key="bath">浴室暖房乾燥機</button>
+  <button class="ba-tab" type="button" data-key="factory">工場排気ファン</button>
+  <button class="ba-tab" type="button" data-key="aircon">4方向カセットエアコン</button>
+  <button class="ba-tab" type="button" data-key="dryer">乾燥機ダクト</button>
+</div>
         <p style="text-align:center;margin-top:24px"><a class="btn btn-outline" href="before-after.html">Before / After 一覧を見る</a></p>
       </div>
     </section>
