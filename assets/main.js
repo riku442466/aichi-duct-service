@@ -26,3 +26,57 @@ if(form && statusBox){
     btn.textContent = "フォーム内容を送信する";
   });
 }
+// =========================
+// Before / After タブ切り替え
+// =========================
+const baData = {
+  duct: {
+    title: "ダクト清掃 前後"
+  },
+  fan: {
+    title: "中間ダクトファン"
+  },
+  bath: {
+    title: "浴室暖房乾燥機"
+  },
+  factory: {
+    title: "工場排気ファン"
+  },
+  aircon: {
+    title: "4方向カセットエアコン"
+  },
+  dryer: {
+    title: "乾燥機ダクト"
+  }
+};
+
+const baTabs = document.querySelectorAll(".ba-tab");
+const baBefore = document.getElementById("baBefore");
+const baAfter = document.getElementById("baAfter");
+
+if (baTabs.length && baBefore && baAfter) {
+  baTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const key = tab.dataset.key;
+      const item = baData[key];
+      if (!item) return;
+
+      baTabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      baBefore.innerHTML = `
+        <div class="ba-image-placeholder">
+          <div class="ba-label">BEFORE</div>
+          <div class="ba-caption">${item.title}</div>
+        </div>
+      `;
+
+      baAfter.innerHTML = `
+        <div class="ba-image-placeholder ba-image-placeholder-after">
+          <div class="ba-label">AFTER</div>
+          <div class="ba-caption">${item.title}</div>
+        </div>
+      `;
+    });
+  });
+}
